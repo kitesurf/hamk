@@ -1,0 +1,240 @@
+baseURL = "http://haus-kaufen-auf-mallorca.de/"
+languageCode = "de"
+title = "Haus zu verkaufen auf Mallorca"
+theme = "hugo-strata-theme"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Daniel von Ledebur"
+disqusshortname = ""
+pluralizelisttitles = false
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+date_format = "Jan 2, 2006"
+description = "Haus zu verkaufen auf Mallorca"
+copyright = "Copyright © 2017 by Daniel von Ledebur"
+# copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
+logofile = "images/logo.png"
+faviconfile = "images/logo.png"
+defaultPostImage = "images/logo.png"
+highlightjs = false
+blazy = true
+# progressively = true
+share = false
+latestpostcount = 5
+github = ""
+email = ""
+linkedin = ""
+twitter = ""
+facebook = ""
+# social_banner = "img/banner.png"
+usesmallsummarycard = true
+posts_navigation = false
+# issoHost = ""
+# githubRepo = ""
+small_banner_logo = false
+
+  [params.publisher]
+    name = "Daniel von Ledebur"
+
+    [params.publisher.logo]
+      url = "/images/avatar.jpg"
+      width = 250
+      height = 244
+
+  [params.logo]
+    url = "/images/logo.png"
+    width = 401
+    height = 311
+
+  [params.image]
+    url = "/images/bg.jpg"
+    width = 1200
+    height = 1200
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Haus auf Mallorca von Privat zu verkaufen**<br> von Pedro Homar(Eigentümer) und<br>Daniel von Ledebur(Webmaster - Deutschsprachig)"
+		# The icons will be shown if you enter your username
+		twitter = ""
+		github = ""
+		gitlab = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = ""
+
+		copyright = [
+			"Design: [kite-mallorca](//kite-mallorca.com)",
+			"Datenschutz: [Disclaimer](/datenschutz)"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "Immobilie in Alcudia, Mallorca von Privat zu Verkaufen"
+		content = "Bei diesem Objekt handelt es sich um ein größeres Haus mit 5 Schlafzimmer, 2 Grosse Wohn- Essbereiche, 2 Küchen, 3 Bäder, jedes Zimmer hat einen eigenen Balkon oder Terrasse. Alle Räume sind über zwei Stockwerke verteilt. Das ganze Haus ist Unterkellert wobei der Grossteil davon als Tiefgarage dient."
+		amazon = "Sollten Sie sich grundsätzlich erstmal nur über ein Immobilienkauf im Ausland - gezielt Spanien - informieren wollen, empfehlen wir ihnen eines der folgenden Bücher:"
+
+		[[params.about.amazonlink]]
+			amzlink = "http://amzn.to/2CXsZgL"
+			title = "Mallorca Menorca Ibiza Formentera - Immobilien auf den Balearen: Kauf - Miete - Erbschaft aus rechtlicher und steuerlicher Sicht"
+			description = ""
+
+		[[params.about.amazonlink]]
+			amzlink = "http://amzn.to/2kf6z2A"
+			title = "Immobilien in Spanien: Zweisprachiger Ratgeber mit den Rechts- und Steuerinformationen aus Spanien und Deutschland"
+			description = ""
+
+	[params.portfolio]
+		hide  = false
+		title = "Gehen Sie hier auf eine Bilderreise um dieses Angebot näher kennen zu lernen"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			raum = "aussen"
+			image = "fulls/06.jpg"
+			thumb = "hausfotos/thumbs/Aussenansicht zu den Bergen mit Sonnenuntergang.jpg"
+			title = "Rund ums Haus in Alcudia"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: Hier sieht man alles aus dem Haus und drum herum"
+
+		[[params.portfolio.gallery]]
+			raum = "schlafzimmer"
+			image = "fulls/02.jpg"
+			thumb = "hausfotos/thumbs/Schlafzimmer mit Ausblick zur Albufereta.jpg"
+			title = "Schlafzimer"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: hier die 5 Schlafzimmer, Doppel und Einzel. Teils mit eigenem Bad"
+
+		[[params.portfolio.gallery]]
+			raum = "wohnzimmer"
+			image = "fulls/01.jpg"
+			thumb = "hausfotos/thumbs/Wohn- Essbereich im Erdgeschoss mit teilweise Blick zum Eingang.jpg"
+			title = "Wohn- u. Esszimmer"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: hier die der grossen Wohn- und Essräumlichkeiten"
+
+		[[params.portfolio.gallery]]
+			raum = "kueche"
+			image = "fulls/03.jpg"
+			thumb = "hausfotos/thumbs/Küche Komplett ausgestattet.jpg"
+			title = "Küche"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: Im Erdgeschoss eine grosse und im Obergeschoss eine etwas kleinere Küche"
+
+		[[params.portfolio.gallery]]
+			raum = "baeder"
+			image = "fulls/04.jpg"
+			thumb = "hausfotos/thumbs/Bad gross mit Doppelwaschbecken ohne Handtücher.jpg"
+			title = "Bäder"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: Bäder und WCs mit Badewanne und/oder Dusche"
+
+		[[params.portfolio.gallery]]
+			raum = "terrassen"
+			image = "fulls/05.jpg"
+			thumb = "hausfotos/thumbs/Eines der vielen Terrassen.jpg"
+			title = "Terrassen"
+			description = "Bilder vom Haus zu verkaufen in Alcudia, Mallorca: 8 Terrassen, so hat jeder sein Platz an der Sonne"
+
+	[params.recentposts]
+		hide  = false
+		price =	"Preis 620.000,- Euro"
+		title = "Lage des hier zum Verkauf angebotenen Hauses:"
+		content = "Am nördlichen Rand von Alcudia, in der Bucht von Pollensa, findet man die sogenannte Albufereta. Hierbei handelt es sich um ein kleines Sumpfgebiet, zwischen Alcudia und Port de Pollensa, welches unter Naturschutz steht und besonders beliebt ist unter Beobachter der hier umfangreichen Vogelwelt. Man kann hier Turmfalken, Kormorane, Reiher, Rebhühner, usw. und sogar zwischen Dezember und Februar Flamingos in ihrem Winterquartier beobachten."
+		content1 = "Alcudia, im Nordosten der Insel von Mallorca gelegen ist ein ehemaliges malerisches Dorf im mittelalterlichen Stil, größtenteils von einer Stadtmauer umgeben, und mittlerweile zur Kleinstadt heran gewachsen. Die kleinen Gassen hinter den Mauern laden mit ihren unzähligen Einkaufsläden und Boutiquen zum shoppen ein. Man findet aber natürlich für die Verköstigung auch jede Menge Restaurants und Bars in der Altstadt von Alcudia. Die Stadtmauer ist teilweise begehbar und gibt Gelegenheit zum Blick in die mit Feigen- und Zitrusbäume zugewachsene Patios (Spanisch für Innenhöfe) einiger ehemaligen Herrenhäuser. Vom Stadtkern unweit entfernt findet man mittlerweile auch einige Supermärkte sowie sogar eine Filiale der Deutschen Drogeriemarktkette Müller. Hier lassen sich die alltäglichen Einkäufe perfekt erledigen."
+
+	[params.contact]
+		hide  = false
+		title = "Kontakt"
+		content = "Haben wir Ihr Interesse geweckt? Haben Sie noch Fragen oder möchten Sie eine Besichtigung vereinbaren? Schreiben sie uns an"
+
+		# This can be exact coordinates or a searchable address in google maps
+		# gmaps_address = "39.7889055,-120.5443524"
+		address = [
+			"Daniel von Ledebur",
+			"Calle del Greco 19",
+			"Alcudia",
+			"Spanien"
+		]
+		phone = "0034-696264729"
+
+
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "daniel@kite-mallorca.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "E-Mail"
+			message = "Ihre Nachricht"
+			submit = "Absenden"
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 10
+
+[[menu.main]]
+	name = "Wohn- u. Esszimmer"
+	url  = "/wohnzimmer"
+	weight = 0
+
+[[menu.main]]
+	name = "Einzel- und Doppelzimmer"
+	url  = "/schlafzimmer"
+	weight = 0
+
+[[menu.main]]
+	name = "Küchen"
+	url  = "/kueche"
+	weight = 0
+
+[[menu.main]]
+	name = "Terrassen und Dachterrasse"
+	url  = "/terrassen"
+	weight = 0
+
+[[menu.main]]
+	name = "Bäder und WCs"
+	url  = "/baeder"
+	weight = 0
+
+[[menu.main]]
+	name = "Aussen und nähere Umgebung"
+	url  = "/aussen"
+	weight = 0
+
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"

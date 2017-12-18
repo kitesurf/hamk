@@ -1,0 +1,172 @@
+@font-face{font-family:'icomoon';src:url('https://haus-kaufen-auf-mallorca.de/static/fonts/icomoon.woff?sdo6no')format('woff');font-weight:normal;font-style:normal;}
+.icomoon{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.icon-mail-envelope-closed:before{content:"\e900";}.icon-brand:before{content:"\e901";color:#0084ff;}.icon-phone:before{content:"\e942";}.icon-whatsapp:before{content:"\ea93";}.icon-cross:before{content:"\ea0f";}.icon-bubbles3:before{content:"\e96f";}.icon-circle-left:before{content:"\ea44";}
+material-icons {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+footer .btn-multi {
+  position: absolute;
+  z-index: 999;
+  right: -30px;
+  bottom: 20px;
+}
+.btn {
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 8px 20px;
+  font-size: 24px;
+  background-color: #df061c;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.2s ease-in;
+  background-position: 50%;
+  outline: none;
+}
+.btn.btn-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 24px;
+}
+.btn-multi input {
+  display: none;
+}
+.btn-multi input:not(:checked) ~ label {
+  transform: rotate(0);
+}
+.btn-multi input:not(:checked) ~ label .btn {
+  background-color: #df061c;
+  border-radius: 0;
+  height: 25px;
+  width: 25px;
+  box-shadow: none;
+  pointer-events: none;
+}
+.btn-multi input:not(:checked) ~ label .btn:first-child {
+  border-top-left-radius: 100%;
+  transform: translate(25px, 25px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(2) {
+  border-top-right-radius: 100%;
+  transform: translate(50px, 25px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(3) {
+  border-bottom-left-radius: 100%;
+  transform: translate(25px, 50px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(4) {
+  border-bottom-right-radius: 100%;
+  transform: translate(50px, 50px);
+}
+.btn-multi input:not(:checked) ~ label .btn:nth-child(5) {
+  border-bottom-right-radius: 100%;
+  transform: translate(50px, 50px);
+}.btn-multi input:not(:checked) ~ label .btn .icon {
+  opacity: 0;
+}
+.btn-multi input:not(:checked) ~ label > .icon {
+  opacity: 1;
+  cursor: pointer;
+}
+.btn-multi label {
+  position: relative;
+  height: 110px;
+  width: 110px;
+  display: block;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+  cursor: default;
+}
+.btn-multi label .btn {
+  background-color: yellow;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transform: translate(-38px, -22px);
+}
+.btn-multi label .btn:nth-child(2) {
+  background-color: orange;
+  transform: translate(-60px, 18px);
+}
+.btn-multi label .btn:nth-child(3) {
+  background-color: #25d366;
+  transform: translate(-40px, 100px);
+}
+.btn-multi label .btn:nth-child(4) {
+  background-color: white;
+  transform: translate(-60px, 62px);
+}
+.btn-multi label .btn:nth-child(4) .icon {
+  transform:rotate(-20deg);
+}
+.btn-multi label .btn:nth-child(5) {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  transform: translate(20px, 30px);
+
+}
+.btn-multi label .btn .icon {
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+  transform: rotate(-45deg);
+}
+.btn-multi input:checked ~  label .tooltiptext {
+  visibility: hidden;
+}
+.btn-multi label > .icon {
+  color: white;
+  position: absolute;
+  font-size: 32px;
+  left: calc(30%);
+  top: calc(30%);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+.btn-multi label .icon {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    position: absolute;
+    top: -25px;
+    right: 70%; 
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

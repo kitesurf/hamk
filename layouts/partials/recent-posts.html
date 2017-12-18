@@ -1,0 +1,11 @@
+<section>
+    {{ with .Site.Params.recentposts.price }}
+        <h2>{{ . }}</h2>
+    {{ end }}
+
+	<div >
+		{{ with .Site.Params.recentposts.title }}<h3>{{ . }}</h3>{{ end }}
+        {{ with .Site.Params.recentposts.content }}<p>{{ . | markdownify }}</p>{{ end }}
+        {{ with .Site.Params.recentposts.content1 }}<p>{{ . | markdownify }}</p>{{ end }}
+	</div>
+</section>
