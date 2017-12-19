@@ -5,7 +5,7 @@ date: 2017-12-09T19:06:22+01:00
 meta_img: "/images/image.jpg"
 tags: ["tags"]
 description: "Desc"
-draft: true
+draft: 
 ---
 
 Mein Nachbar Pedro kam letztens zu mir und meinte er möchte sein Haus verkaufen. Ich habe beschlossen ihm dabei zu helfen. 
