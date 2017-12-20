@@ -11,7 +11,7 @@ publishdir = "public"
 author = "Daniel von Ledebur"
 disqusshortname = ""
 pluralizelisttitles = false
-googleAnalytics: "UA-111466005-1"
+googleAnalytics= "UA-111466005-1"
 
 [permalinks]
 blog = "blog/:slug/"
