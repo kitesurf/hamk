@@ -2,9 +2,10 @@
 <section id="two">
 	{{ with .Site.Params.portfolio.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
 	<div class="row">
+		{{ partial "blazy.html" . }}
 		{{ range .Site.Params.portfolio.gallery }}
 		<article class="6u 12u$(xsmall) work-item">
-			<a href="{{ $.Site.BaseURL }}{{ .raum }}" class="image fit thumb"><img src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="" /></a>
+			<a href="{{ $.Site.BaseURL }}{{ .raum }}" class="image fit thumb"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ $.Site.BaseURL }}images/{{ .thumb }}" alt="{{ .pic_alt }}" title="{{ .pic_title }}" /></a>
 			<h3>{{ .title | markdownify }}</h3>
 			<p>{{ .description | markdownify }}</p>
 		</article>
