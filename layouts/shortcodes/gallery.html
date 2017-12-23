@@ -8,11 +8,9 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 {{ $baseURL := .Site.BaseURL }}
         <script>
         ;(function() {
-		    var bLazy = new Blazy({ 
-		        selector: 'img' // all images
-		    });
+            var bLazy = new Blazy();
         })();
-        </script> 
+        </script>    
 <div class="gallery caption-position-{{ with .Get "caption-position" | default "bottom" }}{{.}}{{end}} caption-effect-{{ with .Get "caption-effect" | default "slide" }}{{.}}{{end}} hover-effect-{{ with .Get "hover-effect" | default "zoom" }}{{.}}{{end}} {{ if ne (.Get "hover-transition") "none" }}hover-transition{{end}}" itemscope itemtype="http://schema.org/ImageGallery">
 	{{- with (.Get "dir") -}}
 		<!-- If a directory was specified, generate figures for all of the images in the directory -->
@@ -30,7 +28,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 				{{- $thumbURL := print $baseURL ($.Get "dir") "" $thumb | absURL }}<!-- absolute URL to thumbnail image -->
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img" style="background-image: url('{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}');" >
+				    <div class="img b-lazy" data-src="{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}" >
 				      <img itemprop="thumbnail" src="{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}" alt="{{ $caption }}" /><!-- <img> hidden if in .gallery -->
 				    </div>
 			      <figcaption>
