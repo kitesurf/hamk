@@ -10,8 +10,9 @@ Link = '''
 </js/skel.min.js>; rel=preload; as=script, \
 </js/util.js>; rel=preload; as=script, \
 </js/main.js>; rel=preload; as=script, \
-</images/*.jpg>; rel=preload; as=image, \
-</css/images/*.png>; rel=preload; as=image'''
+</images/avatar.jpg>; rel=preload; as=image, \
+</css/images/overlay.png>; rel=preload; as=image, \
+</images/bg.jpg>; rel=preload; as=image'''
 [[headers]]
 for = "/*"
 [headers.values]
@@ -26,6 +27,6 @@ for = "/js/*"
 [headers.values]
 Cache-Control = "public, max-age=3600000"
 [[headers]]
-for = "/images/*"
+for = "/images/*.jpg"
 [headers.values]
 Cache-Control = "public, max-age=3600000"
