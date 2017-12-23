@@ -1,6 +1,6 @@
 [[headers]]
-[headers.values]
 for = "/"
+[headers.values]
 Link = '''
 </css/main.css>; rel=preload; as=stylesheet, \
 </css/hugo-easy-gallery.css>; rel=preload; as=stylesheet, \
@@ -12,12 +12,20 @@ Link = '''
 </js/main.js>; rel=preload; as=script, \
 </images/*.jpg>; rel=preload; as=image, \
 </css/images/*.png>; rel=preload; as=image'''
+[[headers]]
 for = "/*"
+[headers.values]
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
+[[headers]]
 for = "/css/*"
+[headers.values]
 Cache-Control = "public, max-age=3600000"
+[[headers]]
 for = "/js/*"
+[headers.values]
 Cache-Control = "public, max-age=3600000"
+[[headers]]
 for = "/images/*"
+[headers.values]
 Cache-Control = "public, max-age=3600000"
