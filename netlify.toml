@@ -1,0 +1,27 @@
+[[headers]]
+for = "/"
+[headers.values]
+Link = '''
+</css/main.css>; rel=preload; as=stylesheet, \
+</css/hugo-easy-gallery.css>; rel=preload; as=stylesheet, \
+</css/ie8.css>; rel=preload; as=stylesheet, \
+</js/blazy.min.js>; rel=preload; as=script, \
+</js/jquery.min.js>; rel=preload; as=script, \
+</js/skel.min.js>; rel=preload; as=script, \
+</js/util.js>; rel=preload; as=script, \
+</main.js>; rel=preload; as=script, \
+</*.jpg>; rel=preload; as=image, \
+</*.png>; rel=preload; as=image'''
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+[[headers]]
+for = "/css/*"
+[headers.values]
+Cache-Control = "public, max-age=360000"
+[[headers]]
+for = "/js/*"
+[headers.values]
+Cache-Control = "public, max-age=360000"
