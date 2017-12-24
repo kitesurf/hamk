@@ -28,7 +28,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 				{{- $thumbURL := print $baseURL ($.Get "dir") "" $thumb | absURL }}<!-- absolute URL to thumbnail image -->
 				<div class="box">
 				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-				    <div class="img b-lazy" itemprop="thumbnail" data-src="{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}" ></div>
+				    <div class="img b-lazy" itemprop="thumbnail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ if $thumbexists }}{{ $thumbURL }}{{ else }}{{ $linkURL }}{{ end }}" ></div>
 			      <figcaption>
 		          <p>{{ $caption }}</p>
 			      </figcaption>
